@@ -3638,23 +3638,25 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at -6.35 11.43 0)
+			(property "Reference" "U3"
+				(at 11.43 1.2701 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Value" "W25Q16JVSS"
-				(at 7.62 11.43 0)
+				(at 11.43 -1.2699 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Footprint" "Package_SO:SOIC-8_5.3x5.3mm_P1.27mm"
+			(property "Footprint" "Package_SON:Winbond_USON-8-1EP_3x2mm_P0.5mm_EP0.2x1.6mm"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3850,6 +3852,24 @@
 						)
 					)
 					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -12.7 90)
+					(length 2.54)
+					(name "MP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4904,6 +4924,12 @@
 		(uuid "a90296c9-5b04-4088-affd-788fdb6fa84c")
 	)
 	(junction
+		(at 104.14 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b43261aa-7378-4233-af52-14eb10d219ab")
+	)
+	(junction
 		(at 93.98 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5326,6 +5352,16 @@
 			(type default)
 		)
 		(uuid "90da570c-5ace-41b6-94d5-ed88f2fa63a1")
+	)
+	(wire
+		(pts
+			(xy 104.14 105.41) (xy 106.68 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "916cea4b-e9ee-475c-98f8-52eb2d91199c")
 	)
 	(wire
 		(pts
@@ -8518,7 +8554,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Horizontal"
 			(at 166.37 105.41 0)
 			(effects
 				(font
@@ -9989,6 +10025,9 @@
 		)
 		(pin "4"
 			(uuid "c154fd8f-fa3e-4359-97fe-da6dce59d1f7")
+		)
+		(pin "9"
+			(uuid "8ac9c1a2-2cec-4703-ab92-c94aa282446a")
 		)
 		(instances
 			(project ""
@@ -12089,7 +12128,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Horizontal"
 			(at 171.45 102.87 0)
 			(effects
 				(font
